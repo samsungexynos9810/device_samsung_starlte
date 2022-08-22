@@ -29,13 +29,26 @@ TARGET_SCREEN_WIDTH := 1440
 TARGET_BOOT_ANIMATION_RES := 1440
 
 ## Inherit some common AOSP stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/awaken/config/common_full_phone.mk)
 
 ## Device identifier, this must come after all inclusions
-PRODUCT_NAME := aosp_starlte
+PRODUCT_NAME := awaken_starlte
 PRODUCT_DEVICE := starlte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-G960F
 PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
+
+# Boot Animation Resolution
+TARGET_BOOT_ANIMATION_RES := 1440
+
+# GApps
+TARGET_GAPPS_ARCH := arm64
+USE_GAPPS := true
+
+# Google Assistant
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+
+# Google Recorder
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
