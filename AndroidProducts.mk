@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_starlte.mk
+    $(LOCAL_DIR)/hentai_starlte.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_starlte-eng \
-    aosp_starlte-user \
-    aosp_starlte-userdebug
+    hentai_starlte-eng \
+    hentai_starlte-user \
+    hentai_starlte-userdebug
